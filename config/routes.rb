@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
-  resources :wanted_games, except: %i[new edit]
 
   resources :examples, except: %i[new edit]
   post '/sign-up' => 'users#signup'
@@ -8,5 +7,6 @@ Rails.application.routes.draw do
   delete '/sign-out/:id' => 'users#signout'
   patch '/change-password/:id' => 'users#changepw'
   resources :users, only: %i[index show]
-  resources :games, except: %i[new edit]
+  resources :games, only: %i[show index]
+  resources :wanted_games, except: %i[new edit update]
 end
