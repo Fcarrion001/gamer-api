@@ -1,4 +1,4 @@
-class WantedGamesController < ApplicationController
+class WantedGamesController < OpenReadController
   before_action :set_wanted_game, only: [:show, :update, :destroy]
 
   # GET /wanted_games
