@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class GamesController < OpenReadController
-  before_action :set_game, only: [:showgit ]
+  before_action :set_game, only: [:show]
 
   # GET /games
   def index
