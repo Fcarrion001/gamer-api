@@ -3,5 +3,6 @@
 class User < ApplicationRecord
   include Authentication
   has_many :examples
-  has_many :wishlists
+  has_many :wanted_games
+  has_many :games, through: :wanted_games
 end
