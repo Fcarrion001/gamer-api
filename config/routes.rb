@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
-  resources :wanted_games
-  get 'wanted_games/index'
+  resources :wanted_games, except: %i[new edit]
 
   resources :examples, except: %i[new edit]
   post '/sign-up' => 'users#signup'

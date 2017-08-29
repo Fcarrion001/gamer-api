@@ -1,5 +1,5 @@
 class WantedGamesController < OpenReadController
-  before_action :set_wanted_game, only: [:show, :update, :destroy]
+  before_action :set_wanted_game, only: [:update, :destroy]
 
   # GET /wanted_games
   def index
@@ -10,12 +10,13 @@ class WantedGamesController < OpenReadController
 
   # GET /wanted_games/1
   def show
+    @wanted_game = WantedGame.find(params[:id])
     render json: @wanted_game
   end
 
   # POST /wanted_games
   def create
-    @wanted_game = WantedGame.new(wanted_game_params)
+    @wanted_game = current_user.wanted_games.build(wanted_game_params)
 
     if @wanted_game.save
       render json: @wanted_game, status: :created, location: @wanted_game
@@ -41,7 +42,7 @@ class WantedGamesController < OpenReadController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_wanted_game
-      @wanted_game = WantedGame.find(params[:id])
+      @wanted_game = current_user.wanted_games.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
