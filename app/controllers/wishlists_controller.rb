@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WishlistsController < ApplicationController
   before_action :set_wishlist, only: [:show, :update, :destroy]
 
@@ -39,13 +41,14 @@ class WishlistsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_wishlist
-      @wishlist = Wishlist.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def wishlist_params
-      params.require(:wishlist).permit(:game_name, :platform, :release_date)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_wishlist
+    @wishlist = Wishlist.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def wishlist_params
+    params.require(:wishlist).permit(:game_name, :platform, :release_date)
+  end
 end
