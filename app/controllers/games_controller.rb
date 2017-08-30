@@ -10,9 +10,9 @@ class GamesController < OpenReadController
     p user_key
     p "route is being hit"
     # headers and get request required by the api in the format that the gem requires
-    response = HTTP.headers({ :accept => "application/json", 'user-key' => user_key })
-                .get("https://api-2445582011268.apicast.io/games/?fields=name,release_dates.human,release_dates.platform&filter[release_dates.platform][eq]=48&filter[release_dates.platform][eq]=6&filter[release_dates.platform][eq]=49&filter[release_dates.human][gt]=2017-Aug-30&filter[popularity][gt]=80&filter[category][eq]=0").to_s
-      render json: response
+    response = HTTP.headers(:accept => 'application/json', 'user-key' => user_key)
+              .get("https://api-2445582011268.apicast.io/games/?fields=name,release_dates.human,release_dates.platform&filter[release_dates.platform][eq]=48&filter[release_dates.platform][eq]=6&filter[release_dates.platform][eq]=49&filter[release_dates.human][gt]=2017-Aug-30&filter[popularity][gt]=90&filter[category][eq]=0").to_s
+    render json: response
   end
 
   def index
@@ -61,6 +61,6 @@ class GamesController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def game_params
-    params.require(:game).permit(:game_name, :platform, :release_date)
+    params.require(:game).permit(:game_name, :platform, :release_date, :api_id, :totalAdds)
   end
 end
