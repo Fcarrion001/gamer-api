@@ -1,3 +1,9 @@
 class WantedGameSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :game_id
+  attributes :id, :game
+  has_one :user_id
+  has_one :game_id
+
+def game
+  object.game
+end
 end
