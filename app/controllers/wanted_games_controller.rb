@@ -3,8 +3,10 @@ class WantedGamesController < OpenReadController
 
   # GET /wanted_games
   def index
+    # Game.connection
+    # @game = Game
+    # @wanted_games = @game.joins(:wanted_games).where(wanted_games: { user_id: current_user })
     @wanted_games = current_user.wanted_games.all
-    # @wanted_games = WantedGame.all
     render json: @wanted_games
   end
 
