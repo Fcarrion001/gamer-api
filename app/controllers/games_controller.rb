@@ -39,14 +39,27 @@ end
     render json: @game
   end
 
+# GET /games/12345
+# This route is redirected to when the user attempts to add an api_game
+# to the games table that does not pass the uniqueness api_id validation
+# It uses the api_id to find the game in the games table so that its id can be
+# used to add it to the wanted_games table.
+  def find
+    @game = Game.find_by(api_id: params[:api_id])
+    render json: @game
+  end
+
   # POST /games
   def create
     @game = Game.new(game_params)
-
+    # p 'this is api_id ', api_id:
+    p 'this is @game', @game[:api_id]
     if @game.save
       render json: @game, status: :created, location: @game
     else
-      render json: @game.errors, status: :unprocessable_entity
+      # render json: @game.errors, status: :unprocessable_entity
+
+      redirect_to action: "find", api_id: @game[:api_id]
     end
   end
   #
