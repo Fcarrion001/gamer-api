@@ -12,7 +12,7 @@ class GamesController < OpenReadController
     p 'this is :params', :params
     # headers and get request required by the api in the format that the gem requires
     @games = HTTP.headers(:accept => 'application/json', 'user-key' => user_key)
-              .get("https://api-2445582011268.apicast.io/games/?fields=*&filter[release_dates.platform][eq]=48&filter[popularity][gte]=8&filter[storyline][exists]=true&filter[first_release_date][gte]=1504144194000&limit=50&scroll=1").to_s
+              .get("https://api-2445582011268.apicast.io/games/?fields=*&filter[release_dates.platform][eq]=48&filter[popularity][gte]=8&filter[first_release_date][gte]=1504144194000&limit=50&scroll=1").to_s
               # binding.pry
               p @games
     render json: @games
@@ -26,7 +26,8 @@ class GamesController < OpenReadController
               .get("https://api-2445582011268.apicast.io/games/#{params[:id]}?fields=name,first_release_date,storyline,summary,total_rating,genres,popularity&expand=genres&filter[summary][exists]=true").to_s
 
               render json: @game
-end
+  end
+
   def index
     @games = Game.all
 
