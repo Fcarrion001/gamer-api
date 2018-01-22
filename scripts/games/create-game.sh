@@ -11,7 +11,13 @@ curl "${API}${URL_PATH}" \
     "game": {
       "game_name": "'"${NAME}"'",
       "platform": "'"${PLATFORM}"'",
-      "release_date": "'"${DATE}"'"
+      "release_date": "'"${DATE}"'",
+      "cloudinary_id": "'"${CLOUD}"'",
+      "screenshot": "'"${SS}"'",
+      "api_id": "'"${APIID}"'",
+      "storyline": "'"${STORY}"'",
+      "summary": "'"${SUMMARY}"'",
+      "url": "'"${URL}"'"
     }
   }'
 
