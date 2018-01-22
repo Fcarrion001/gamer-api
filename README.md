@@ -2,9 +2,11 @@
 
 # A Game data store and list tracker API
 
-An API that makes requests to a 3rd party API to retrieve game data, store data that users wish, and view what games are on other User's wishlists.
+An API that makes requests to a 3rd party API to retrieve game data, store data
+that users wish, and view what games are on other User's wishlists.
 
-Visit the [Igdb Documentation](https://igdb.github.io/api/) for more information about the 3rd party API.
+Visit the [Igdb Documentation](https://igdb.github.io/api/) for more information
+about the 3rd party API.
 
 ### Authentication
 
@@ -180,8 +182,40 @@ X-Runtime: 0.347920
 Vary: Origin
 Transfer-Encoding: chunked
 
-[{"id":58479,"name":"Out of Line","url":"https://www.igdb.com/games/out-of-line","summary":"Out of Line is an upcoming platform/action-adventure videogame being developed by Duckling Studios, for PlayStation 4 and PC/MAC. \nHelp little San and his brothers journey, solve difficult puzzles, alongside action challenges in their quest to survive and escape the “factory”.","storyline":"Little San woke up in the middle of an factory. Soon he discovered that he isn't alone. Far from it. There are several other kids, that look exactly like him! \n \nAt the distance, sound of machines are heard. They became closer, and closer, louder and louder... All of the sudden, out of nowhere, several hooks appear and start picking up everyone! What is this place? Can San and his new found brothers escape this devilish environment?","first_release_date":1551571200000,"cover":{"url":"//images.igdb.com/igdb/image/upload/t_thumb/v3l0voobqkaucxytkcdf.jpg","cloudinary_id":"v3l0voobqkaucxytkcdf","width":892,"height":1024}},
-{"id":11774,"name":"Occultic;Nine","url":"https://www.igdb.com/games/occultic-nine","summary":"Occultic;Nine is an upcoming Japanese visual novel that is based on a light novel of the same name. The game is descibed as a \"Paranormal Science Novel\". The story follows nine idiosyncratic individuals. Little incongruities that occur around these nine eventually lead to a larger, unimaginable event that may alter what is considered common sense in this world. Despite being by the same makers and sharing a similar naming scheme, Occultic;Nine is not a part of 5pb's Science Adventure series of adventure games.","first_release_date":1510185600000,"cover":{"url":"//images.igdb.com/igdb/image/upload/t_thumb/frr8qiwkk0wy5w7lgtgw.jpg","cloudinary_id":"frr8qiwkk0wy5w7lgtgw","width":785,"height":920}}
+[
+  {
+  "id":58479,
+  "name":"Out of Line",
+  "url":"https://www.igdb.com/games/out-of-line",
+  "summary":"Out of Line is an upcoming platform/action-adventure videogame being
+  developed by Duckling Studios, for PlayStation 4 and PC/MAC. \nHelp little San
+  and his brothers journey, solve difficult puzzles, alongside action challenges
+  in their quest to survive and escape the “factory”.","storyline":"Little San
+  woke up in the middle of an factory. Soon he discovered that he isn't alone.
+  Far from it. There are several other kids, that look exactly like him! \n \nAt
+  the distance, sound of machines are heard. They became closer, and closer,
+  louder and louder... All of the sudden, out of nowhere, several hooks appear
+  and start picking up everyone! What is this place? Can San and his new found
+  brothers escape this devilish environment?",
+  "first_release_date":1551571200000,
+  "cover":{"url":"//images.igdb.com/igdb/image/upload/t_thumb/v3l0voobqkaucxytkcdf.jpg","cloudinary_id":"v3l0voobqkaucxytkcdf","width":892,"height":1024}
+  },
+  {
+  "id":11774,
+  "name":"Occultic;Nine",
+  "url":"https://www.igdb.com/games/occultic-nine",
+  "summary":"Occultic;Nine is an upcoming Japanese visual novel that is based on
+  a light novel of the same name. The game is descibed as a \"Paranormal Science
+  Novel\". The story follows nine idiosyncratic individuals. Little incongruities
+  that occur around these nine eventually lead to a larger, unimaginable event
+  that may alter what is considered common sense in this world. Despite being by
+  the same makers and sharing a similar naming scheme, Occultic;Nine is not a part
+  of 5pb's Science Adventure series of adventure games.",
+  "first_release_date":1510185600000,
+  "cover":{"url":"//images.igdb.com/igdb/image/upload/t_thumb/frr8qiwkk0wy5w7lgtgw.jpg",
+  "cloudinary_id":"frr8qiwkk0wy5w7lgtgw","width":785,"height":920
+  }
+]
 ```
 
 #### GET api-games/:id
@@ -214,7 +248,22 @@ X-Runtime: 0.392754
 Vary: Origin
 Transfer-Encoding: chunked
 
-[{"id":27920,"name":"Digimon Story: Cyber Sleuth - Hacker’s Memory","url":"https://www.igdb.com/games/digimon-story-cyber-sleuth-hackers-memory","summary":"Game for PlayStation 4 and Vita.","storyline":"\"Set in the near future, the line between the real and digital worlds is blurred and logging into cyberspace is a part of everyday life. In the shadows lurk hackers utilizing computer viruses called Digimon to commit mischief and crimes. \n \nFramed and accused of wrongdoings, Keisuke Amazawa has no choice but to dive into the digital world to not only clear his name and prove his innocence, but to protect his loved ones.\"","first_release_date":1513209600000,"cover":{"url":"//images.igdb.com/igdb/image/upload/t_thumb/laxddv3tcngamkufq1ak.jpg","cloudinary_id":"laxddv3tcngamkufq1ak","width":1200,"height":1326}}]
+[
+{
+"id":27920,
+"name":"Digimon Story: Cyber Sleuth - Hacker’s Memory",
+"url":"https://www.igdb.com/games/digimon-story-cyber-sleuth-hackers-memory",
+"summary":"Game for PlayStation 4 and Vita.",
+"storyline":"\"Set in the near future, the line between the real and digital
+worlds is blurred and logging into cyberspace is a part of everyday life. In the
+shadows lurk hackers utilizing computer viruses called Digimon to commit mischief
+and crimes. \n \nFramed and accused of wrongdoings, Keisuke Amazawa has no choice
+but to dive into the digital world to not only clear his name and prove his
+innocence, but to protect his loved ones.\"",
+"first_release_date":1513209600000,
+"cover":{"url":"//images.igdb.com/igdb/image/upload/t_thumb/laxddv3tcngamkufq1ak.jpg",
+"cloudinary_id":"laxddv3tcngamkufq1ak","width":1200,"height":1326}
+}]
 ```
 
 #### GET /games
@@ -256,7 +305,15 @@ Transfer-Encoding: chunked
 "api_id": 6414,
 "totalAdds": 1,
 "storyline": null,
-"summary": "Kingdom Under Fire II merges real-time strategy (RTS), role-playing game (RPG) and massively multiplayer online game (MMO) genres - the game is to have a single player, and online multiplayer mode. The game follows on chronologically from Kingdom Under Fire: Circle of Doom, and is the first RTS game set in the Kingdom Under Fire universe to be released since the 2005 Kingdom Under Fire: Heroes. \n \nThe game was announced in January 2008, and has been subject to delay and changes to release platforms; A closed beta-test began in December 2011 in South Korea. \n \nIn November 2013, the developers announced that a version for the PlayStation 4 was in development.",
+"summary": "Kingdom Under Fire II merges real-time strategy (RTS), role-playing
+game (RPG) and massively multiplayer online game (MMO) genres - the game is to
+have a single player, and online multiplayer mode. The game follows on
+chronologically from Kingdom Under Fire: Circle of Doom, and is the first RTS
+game set in the Kingdom Under Fire universe to be released since the 2005
+Kingdom Under Fire: Heroes. \n \nThe game was announced in January 2008, and has
+been subject to delay and changes to release platforms; A closed beta-test began
+in December 2011 in South Korea. \n \nIn November 2013, the developers announced
+that a version for the PlayStation 4 was in development.",
 "url": "https://www.igdb.com/games/kingdom-under-fire-ii",
 "screenshot": "https:https://igdb.spacechop.com/igdb/image/upload/t_thumb/uzzbpbjkxko02u2c18lu.jpg",
 "cloudinary_id": "uzzbpbjkxko02u2c18lu"
@@ -269,7 +326,12 @@ Transfer-Encoding: chunked
 "api_id": 14362,
 "totalAdds": 1,
 "storyline": null,
-"summary": "Detroit: Become Human is an neo-noir thriller. The plot revolves around three androids: Kara, who escapes the factory she was made in to explore her newfound sentience; Connor, whose job it is to hunt down deviant androids like Kara; and Markus, who devotes himself to releasing the androids from servitude. The characters may survive or perish depending on the choices that are made, which serve to shape the story as customised by the player.",
+"summary": "Detroit: Become Human is an neo-noir thriller. The plot revolves
+around three androids: Kara, who escapes the factory she was made in to explore
+her newfound sentience; Connor, whose job it is to hunt down deviant androids
+like Kara; and Markus, who devotes himself to releasing the androids from
+servitude. The characters may survive or perish depending on the choices that
+are made, which serve to shape the story as customised by the player.",
 "url": "https://www.igdb.com/games/detroit-become-human--1",
 "screenshot": "https://images.igdb.com/igdb/image/upload/t_thumb/fpcxgdnsjyvhbydznfin.jpg",
 "cloudinary_id": "fpcxgdnsjyvhbydznfin"
@@ -315,7 +377,15 @@ Transfer-Encoding: chunked
 "api_id": 6414,
 "totalAdds": 1,
 "storyline": null,
-"summary": "Kingdom Under Fire II merges real-time strategy (RTS), role-playing game (RPG) and massively multiplayer online game (MMO) genres - the game is to have a single player, and online multiplayer mode. The game follows on chronologically from Kingdom Under Fire: Circle of Doom, and is the first RTS game set in the Kingdom Under Fire universe to be released since the 2005 Kingdom Under Fire: Heroes. \n \nThe game was announced in January 2008, and has been subject to delay and changes to release platforms; A closed beta-test began in December 2011 in South Korea. \n \nIn November 2013, the developers announced that a version for the PlayStation 4 was in development.",
+"summary": "Kingdom Under Fire II merges real-time strategy (RTS), role-playing
+game (RPG) and massively multiplayer online game (MMO) genres - the game is to
+have a single player, and online multiplayer mode. The game follows on
+chronologically from Kingdom Under Fire: Circle of Doom, and is the first
+RTS game set in the Kingdom Under Fire universe to be released since the 2005
+Kingdom Under Fire: Heroes. \n \nThe game was announced in January 2008, and has
+been subject to delay and changes to release platforms; A closed beta-test began
+in December 2011 in South Korea. \n \nIn November 2013, the developers announced
+that a version for the PlayStation 4 was in development.",
 "url": "https://www.igdb.com/games/kingdom-under-fire-ii",
 "screenshot": "https:https://igdb.spacechop.com/igdb/image/upload/t_thumb/uzzbpbjkxko02u2c18lu.jpg",
 "cloudinary_id": "uzzbpbjkxko02u2c18lu"
@@ -323,7 +393,11 @@ Transfer-Encoding: chunked
 ```
 #### GET /game/:api_id
 
-The `find` GET requests and responses are identical to `show` except for the difference in the route. This route serves as a redirect in the event that the `create` game action is unsuccessful due to a violation of the api_id uniqueness validator.  This allows access to the id of the existing game to be used for the ultimate goal of posting to the wanted_games table.
+The `find` GET requests and responses are identical to `show` except for the
+difference in the route. This route serves as a redirect in the event that the
+`create` game action is unsuccessful due to a violation of the api_id uniqueness
+validator.  This allows access to the id of the existing game to be used for the
+ultimate goal of posting to the wanted_games table.
 
 
 
@@ -356,7 +430,16 @@ curl https://salty-brook-97934.herokuapp.com/games \
   }'
 ```
 ```sh
-TOKEN=BAhJIiU2Y2QyMTZiYjE0OGQyNjdjNmVkOGRhY2M0M2UyMjQ2ZQY6BkVG--62d9946fbb4b2d7baa34e01cad727b60aeb89a3a APIID=37016 NAME="Metro Exodus" URL="https://www.igdb.com/games/metro-exodus" SUMMARY="Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created. Explore the Russian wilderness across vast, non-linear levels and follow a thrilling story-line that spans an entire year through spring, summer and autumn to the depths of nuclear winter. Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues Artyom’s story in the greatest Metro adventure yet" DATE=1546214400000 SS="//images.igdb.com/igdb/image/upload/t_thumb/r8fpmxloce7eobtksodk.jpg" CLOUD="r8fpmxloce7eobtksodk" PLATFORM="playstation 4" sh scripts/games/create-game.sh
+TOKEN=BAhJIiU2Y2QyMTZiYjE0OGQyNjdjNmVkOGRhY2M0M2UyMjQ2ZQY6BkVG--62d9946fbb4b2d7baa34e01cad727b60aeb89a3a
+APIID=37016 NAME="Metro Exodus" URL="https://www.igdb.com/games/metro-exodus"
+SUMMARY="Metro Exodus is an epic, story-driven first person shooter from 4A
+Games that blends deadly combat and stealth with exploration and survival horror
+in one of the most immersive game worlds ever created. Explore the Russian
+wilderness across vast, non-linear levels and follow a thrilling story-line that
+spans an entire year through spring, summer and autumn to the depths of nuclear
+winter. Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues
+Artyom’s story in the greatest Metro adventure yet" DATE=1546214400000 SS="//images.igdb.com/igdb/image/upload/t_thumb/r8fpmxloce7eobtksodk.jpg"
+CLOUD="r8fpmxloce7eobtksodk" PLATFORM="playstation 4" sh scripts/games/create-game.sh
 ```
 Response:
 
@@ -377,7 +460,25 @@ Transfer-Encoding: chunked
 
 {
 "game":{
-"id":6,"game_name":"Metro Exodus","platform":"playstation 4",`"release_date":null`,"api_id":37016,"totalAdds":1,"storyline":"","summary":"Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created. Explore the Russian wilderness across vast, non-linear levels and follow a thrilling story-line that spans an entire year through spring, summer and autumn to the depths of nuclear winter. Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues Artyom’s story in the greatest Metro adventure yet","url":"https://www.igdb.com/games/metro-exodus","screenshot":"//images.igdb.com/igdb/image/upload/t_thumb/r8fpmxloce7eobtksodk.jpg","cloudinary_id":"r8fpmxloce7eobtksodk"}}
+"id":6,
+"game_name":"Metro Exodus",
+"platform":"playstation 4",
+`"release_date":null`,
+"api_id":37016,
+"totalAdds":1,
+"storyline":"",
+"summary":"Metro Exodus is an epic, story-driven first person shooter from 4A Games
+ that blends deadly combat and stealth with exploration and survival horror in
+ one of the most immersive game worlds ever created. Explore the Russian wilderness
+ across vast, non-linear levels and follow a thrilling story-line that spans an
+ entire year through spring, summer and autumn to the depths of nuclear winter.
+ Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues Artyom’s
+ story in the greatest Metro adventure yet",
+ "url":"https://www.igdb.com/games/metro-exodus",
+ "screenshot":"//images.igdb.com/igdb/image/upload/t_thumb/r8fpmxloce7eobtksodk.jpg",
+ "cloudinary_id":"r8fpmxloce7eobtksodk"
+  }
+ }
 ```
 
 OR, if the game's api_id fails the uniqueness test
@@ -421,7 +522,7 @@ User must be the owner of the `wanted_game` in order to view it. Otherwise a
 
 #### POST /wanted_Games
 
-The id is of the `game` is needed in order to make a `POST` to `wanted_games`
+The id of the `game` is needed in order to make a `POST` to `wanted_games`
 
 
 #### DELETE /wanted_games/:id
