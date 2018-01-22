@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # exists in the game table.
   # The game will be found in the games table using the api_id that is readily
   # available.
-  get '/games/:api_id' => 'games#find'
+  get '/game/:api_id' => 'games#find'
   resources :users, only: %i[index show]
   resources :games, only: %i[show index create]
   resources :wanted_games, except: %i[new edit update]
