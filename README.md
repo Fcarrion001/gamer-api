@@ -529,6 +529,11 @@ The id of the `game` is needed in order to make a `POST` to `wanted_games`
 
 The id of the `wanted_game` is needed for deletion.
 
+## Links
+
+The [`Deployed app`](https://salty-brook-97934.herokuapp.com) to the API
+[`Game-Tracker-Client`](https://github.com/Fcarrion001/game-tracker-client) is the repository to a web app I built that uses this API.
+
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
