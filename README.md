@@ -532,7 +532,8 @@ The id of the `wanted_game` is needed for deletion.
 ## Links
 
 [`Deployed API`](https://salty-brook-97934.herokuapp.com)
-[`Game-Tracker-Client`](https://github.com/Fcarrion001/game-tracker-client)(Repo to web app that I built using this API for requests.) 
+
+[`Game-Tracker-Client`](https://github.com/Fcarrion001/game-tracker-client)(Repo to web app that I built using this API for requests.)
 
 ## [License](LICENSE)
 
