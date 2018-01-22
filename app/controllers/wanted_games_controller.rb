@@ -1,4 +1,4 @@
-class WantedGamesController < OpenReadController
+class WantedGamesController < ProtectedController
   before_action :set_wanted_game, only: [:update, :destroy]
 
   # GET /wanted_games
